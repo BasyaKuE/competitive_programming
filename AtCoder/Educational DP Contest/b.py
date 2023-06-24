@@ -1,10 +1,12 @@
-import math
 N, K = map(int, input().split())
-h = list(map(int, input().split()))
-dp = [math.inf for _ in range(N)]
-dp[0] = h[1]
-for i in range(1, N):
-    if i == 1:
-        dp[i] = abs(h[i]-h[i-1])
-    elif i <= K:
-        dp[i] = min([])
+H = list(map(int, input().split()))
+dp = [0 for _ in range(N)]
+for i in range(N):
+    if i < K:
+        for j in range(i):
+            dp[i] = min(dp[i], dp[i-j]+abs(H[i]-H[j]))
+    else:
+        for j in range(K):
+            dp[i] = min(dp[i], dp[i-j]+abs(H[i]-H[j]))
+print(dp)
+print(dp[-1])
