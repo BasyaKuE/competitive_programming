@@ -1,5 +1,6 @@
 from collections import deque
 
+
 def can_move_to_destination(grid, H, W):
     # 移動パターンを定義する
     pattern = "snuke"
@@ -19,7 +20,7 @@ def can_move_to_destination(grid, H, W):
         visited.add((i, j))
 
         # 文字がパターンと一致しない場合、探索を中止
-        if grid[i-1][j-1] != pattern[pattern_index]:
+        if grid[i - 1][j - 1] != pattern[pattern_index]:
             continue
 
         # 終点に到達した場合、探索を終了
@@ -30,13 +31,18 @@ def can_move_to_destination(grid, H, W):
         pattern_index = (pattern_index + 1) % len(pattern)
 
         # 上下左右に移動できる場合は、そのセルをキューに追加
-        if i > 1: queue.append((i-1, j))  # 上
-        if i < H: queue.append((i+1, j))  # 下
-        if j > 1: queue.append((i, j-1))  # 左
-        if j < W: queue.append((i, j+1))  # 右
+        if i > 1:
+            queue.append((i - 1, j))  # 上
+        if i < H:
+            queue.append((i + 1, j))  # 下
+        if j > 1:
+            queue.append((i, j - 1))  # 左
+        if j < W:
+            queue.append((i, j + 1))  # 右
 
     # 終点に到達できなかった場合は "No"
     return "No"
+
 
 # 入力からグリッドを作成
 H, W = map(int, input().split())
