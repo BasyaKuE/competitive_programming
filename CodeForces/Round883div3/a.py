@@ -1,4 +1,4 @@
-t = int(input())
+ｘt = int(input())
 for _ in range(t):
     n = int(input())
     ans = 0
