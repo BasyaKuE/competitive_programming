@@ -5,10 +5,9 @@ oj t -c "python main.py" -d ./tests/
 
 ### 提出
 ```
-oj s main.py -- -l 5078
+acc s main.py -- -l 5078
 # 再帰ある時
-oj s main.py -- -l 
-oj s --guess-python-interpreter pypy
+acc s main.py -- -l 5055
 ```
 
 ### 次の問題

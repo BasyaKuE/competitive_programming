@@ -1,7 +1,5 @@
-N: int = int(input())
-while True:
-    N_str = str(N)
-    if int(N_str[0])*int(N_str[1]) == int(N_str[2]):
-        print(N_str)
-        exit()
-    N += 1
+X, Y = map(int, input().split())
+if -3 <= Y - X <= 2:
+    print("Yes")
+else:
+    print("No")
