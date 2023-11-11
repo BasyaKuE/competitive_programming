@@ -24,9 +24,9 @@ mypy main.py
 ```
 
 ### 言語
-4047: PyPy3
-5078: Python (PyPy 3.10-v7.3.12)
+- 4047: PyPy3
+- 5078: Python (PyPy 3.10-v7.3.12)
 
 ### 参考にしたもの
-https://qiita.com/shun198/items/6dffbb119a3a133b8e3c
-https://github.com/reo11/AtCoder
+- https://qiita.com/shun198/items/6dffbb119a3a133b8e3c
+- https://github.com/reo11/AtCoder
