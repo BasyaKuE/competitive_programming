@@ -26,10 +26,3 @@ for day in range(D):
             current_y += side_length
 
     current_x, current_y = 0, 0
-
-x + y = 100
-y = x - 40
-
-2y = 60
-y = 30
-x = 70
